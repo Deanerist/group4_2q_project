@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> K-Hub Log-In </title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #e5f1fd;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .log-in-box-container {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: 100px;
+            }
+            .log-in-box {
+                background-color: whitesmoke;
+                align-content: center;
+                text-align: center;
+                border-color: skyblue;
+                border-style: outset;
+                border-width: 20px;
+                width: 30%;
+            }
+
+            #fname, #lname, #pword{
+                border-color:skyblue;
+                border-style: groove;
+                border-width: 8px;
+                width: auto;
+            }
+
+            .log-in-box h1{
+                font-size: 40px;
+                background-color: skyblue;
+            }
+
+            .logo {
+                background-image: url("https://i.postimg.cc/Jn9yfLh4/K-Hub-Design-removebg-preview-1.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media (max-width: 450px) {
+                #fname, #lname, #pword {
+                    width: 100px;
+                    height: 20px;
+                }
+
+                .log-in-box {
+                    margin-top: 40px;
+                    width: 80%;
+                }
+                .logo {
+                    width: 100px;
+                    height: 100px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+
+            @media (min-width: 450px) {
+                .logo {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        </style>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+    <body>
+        <div class = "log-in-box-container">
+            <div class = "log-in-box">
+                <div class = "logo"></div>
+                <h1> Log-In </h1>
+                <form action="LoggedIn.html">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="lname">Password:</label>
+                    <input type="text" id="pword" name="lname"><br><br>
+                    <input type="submit" value="Log-in">
+                  </form>
+            </div>
+        </div>
+</html>
